@@ -1,4 +1,4 @@
-product =[]
+products =[]
 while True:
 	name = input('請輸入商品名稱: ')
 	if name == 'q': #quit
@@ -11,4 +11,5 @@ while True:
 	products.append(p)
 print(products)
 
-#	print(line)
+for p in products:
+	print(p[0], '的價格是', p[1])
