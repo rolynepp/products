@@ -7,8 +7,8 @@ if os.path.isfile('products.csv'):
 		for line in f:
 			if '商品,價格' in line:
 				continue
-		name, price = line.strip().split(',')
-		products.append([name, price])
+			name, price = line.strip().split(',')
+			products.append([name, price])
 	print(products)
 
 else:
